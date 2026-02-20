@@ -1,37 +1,27 @@
 {
-  "name": "Kemal Ardian",
-  "title": "Web and Mobile Programmer",
-  "tagline": "Full-Stack Software Engineer",
-  "bio": "Engineered and launched confidential, high-scale applications for clients in education, e-commerce, and B2B services, driving over 100,000 total usages across all projects.",
+  "name": "Muhammad Faqih Shiam",
+  "title": "Graphic Designer & 2D Artist",
+  "tagline": "Informatics Engineering Student",
+  "bio": "Game artist, Illustrator, Graphic designer. Actively developing skills in Game Art and Pixel Art, with a strong passion for anime-style illustration. Experienced in leading creative teams and designing commercial merchandise. Skilled in creating game assets and developing award-winning visual campaigns.",
   "contact": {
-    "email": "kemalardian17@gmail.com",
-    "phone": "+62 831-7917-5748",
-    "location": "Pangkalpinang, Indonesia",
-    "website": "kardian.my.id",
-    "linkedin": "kemal-ardian-8375a7342",
-    "github": "symful"
+    "email": "faqihshiam23@gmail.com",
+    "phone": "+62 815-7484-2600",
+    "location": "Bandung, Indonesia",
+    "website": "dwdunfaqih.artstation.com",
+    "linkedin": "",
+    "github": ""
   },
   "avatar": "/assets/avatar.png",
   "socialLinks": [
     {
-      "platform": "GitHub",
-      "url": "https://github.com/symful",
-      "icon": "github"
-    },
-    {
-      "platform": "LinkedIn",
-      "url": "https://linkedin.com/in/kemal-ardian-8375a7342",
-      "icon": "linkedin"
-    },
-    {
-      "platform": "Website",
-      "url": "https://kardian.my.id",
+      "platform": "ArtStation",
+      "url": "https://dwdunfaqih.artstation.com",
       "icon": "globe"
     },
     {
       "platform": "Email",
-      "url": "mailto:kemalardian17@gmail.com",
-      "icon": "mail"
+      "url": "mailto:faqihshiam23@gmail.com",
+      "icon": "envelope"
     }
   ]
 }

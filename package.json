@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "nuxt build",
+    "build": "vue-tsc --noEmit && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
@@ -30,6 +30,7 @@
     "lottie-web": "^5.13.0",
     "lucide-vue-next": "^0.564.0",
     "three": "^0.182.0",
+    "typescript": "^5.6.3",
     "vite-tsconfig-paths": "^6.1.1",
     "vitest": "^4.0.18",
     "vue-tsc": "^3.2.4",

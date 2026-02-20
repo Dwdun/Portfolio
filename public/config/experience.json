@@ -1,15 +1,52 @@
 [
   {
-    "title": "Freelance",
-    "company": "Self-Hired",
-    "period": "09/2020 – Present",
+    "title": "2D Artist & Storyboarder",
+    "company": "\"NadaLara\" Animation Project (KMIPN 2025)",
+    "period": "2025",
     "location": "Remote",
     "current": true,
     "responsibilities": [
-      "Engineered and launched confidential, high-scale applications for clients in education, e-commerce, and B2B services, driving over 100,000 total usages across all projects",
-      "Architected full-stack solutions using Flutter (Mobile/Web), TypeScript (Backend/Frontend), and Go, implementing clean architecture, state management, and REST/GraphQL APIs",
-      "Owned the complete development lifecycle from concept to deployment, optimizing for performance, security, and user experience"
+      "Responsible for creating detailed storyboards to visualize the narrative flow.",
+      "Designing 2D assets including characters and environments for the final animation."
     ],
-    "techStack": ["Flutter", "TypeScript", "Go", "PostgreSQL", "MongoDB", "REST", "GraphQL"]
+    "techStack": [
+      "Storyboarding",
+      "2D Assets",
+      "Character Design"
+    ]
+  },
+  {
+    "title": "Graphic Designer",
+    "company": "SIM X ADIWIDYA ITB",
+    "period": "Oct 2025 – Nov 2025",
+    "location": "Bandung",
+    "current": false,
+    "responsibilities": [
+      "Member of the Publication and Design division, creating key visual assets for event promotion and branding.",
+      "Designed committee ID cards, sponsorship pitch decks, YouTube thumbnails, and social media content."
+    ],
+    "techStack": [
+      "Graphic Design",
+      "Branding",
+      "Social Media",
+      "Layouting"
+    ]
+  },
+  {
+    "title": "Merchandise Designer",
+    "company": "Freelance Projects",
+    "period": "2024 – 2025",
+    "location": "Remote",
+    "current": false,
+    "responsibilities": [
+      "Designed community-oriented merchandise for student groups.",
+      "Created official mascot keychains for the JTK Polban '25 cohort.",
+      "Developed visual identity and tactical uniforms for a high school study tour at MAN 1 Cianjur."
+    ],
+    "techStack": [
+      "Merchandise Design",
+      "Visual Identity",
+      "Mascot Design"
+    ]
   }
 ]

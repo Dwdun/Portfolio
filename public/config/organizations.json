@@ -1,15 +1,15 @@
 [
   {
-    "title": "Member",
-    "organization": "English Club High School 3 Pangkalpinang",
-    "period": "2024 – 2024",
-    "location": "Pangkalpinang, Indonesia",
+    "title": "Graphic Designer",
+    "organization": "SIM X ADIWIDYA ITB",
+    "period": "Oct 2025 – Nov 2025",
+    "location": "Jakarta, Indonesia",
     "current": false,
     "responsibilities": [
-      "Participated in weekly English club meetings and discussion groups",
-      "Assisted in organizing language practice sessions and small events",
-      "Contributed to preparation of presentations and club activities to improve public speaking skills"
+      "Member of the Publication and Design division.",
+      "Created key visual assets for event promotion and branding.",
+      "Designed committee ID cards, sponsorship pitch decks, YouTube thumbnails, and social media content while maintaining visual identity."
     ],
-    "logo": "/assets/orgs/english-club-hs3.png"
+    "logo": ""
   }
 ]

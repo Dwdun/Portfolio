@@ -1,26 +1,88 @@
 {
   "languages": [
-    { "name": "Dart", "proficiency": 90, "icon": "dart" },
-    { "name": "TypeScript", "proficiency": 95, "icon": "typescript" },
-    { "name": "Go", "proficiency": 85, "icon": "go" },
-    { "name": "C++", "proficiency": 80, "icon": "cpp" },
-    { "name": "C#", "proficiency": 75, "icon": "csharp" },
-    { "name": "SQL", "proficiency": 85, "icon": "sql" },
-    { "name": "WebAssembly", "proficiency": 70, "icon": "wasm" }
+    {
+      "name": "Clip Studio Paint",
+      "proficiency": 90,
+      "icon": "Clip Studio Paint"
+    },
+    {
+      "name": "Aseprite",
+      "proficiency": 85,
+      "icon": "Aseprite"
+    },
+    {
+      "name": "Adobe Illustrator",
+      "proficiency": 85,
+      "icon": "Illustrator"
+    },
+    {
+      "name": "Adobe Photoshop",
+      "proficiency": 80,
+      "icon": "Photoshop"
+    },
+    {
+      "name": "Canva",
+      "proficiency": 90,
+      "icon": "Canva"
+    },
+    {
+      "name": "Krita",
+      "proficiency": 80,
+      "icon": "Krita"
+    },
+    {
+      "name": "Spine 2D",
+      "proficiency": 75,
+      "icon": "Spine 2D"
+    }
   ],
   "frameworks": [
-    { "name": "Flutter", "proficiency": 95, "icon": "flutter" },
-    { "name": "Deno", "proficiency": 90, "icon": "deno" },
-    { "name": "Node.js", "proficiency": 90, "icon": "nodejs" },
-    { "name": "Bun", "proficiency": 85, "icon": "bun" },
-    { "name": "NestJS", "proficiency": 85, "icon": "nestjs" },
-    { "name": "Firebase", "proficiency": 80, "icon": "firebase" }
+    {
+      "name": "Character Design",
+      "proficiency": 90,
+      "icon": "Design"
+    },
+    {
+      "name": "Storyboard Illustration",
+      "proficiency": 85,
+      "icon": "Storyboard"
+    },
+    {
+      "name": "Pixel Art / Game Assets",
+      "proficiency": 85,
+      "icon": "Pixel Art"
+    },
+    {
+      "name": "Logo & Identity Design",
+      "proficiency": 80,
+      "icon": "Identity"
+    },
+    {
+      "name": "Simple 2D Animation",
+      "proficiency": 80,
+      "icon": "Animation"
+    }
   ],
   "concepts": [
-    { "name": "REST API", "proficiency": 95, "icon": "api" },
-    { "name": "GraphQL", "proficiency": 90, "icon": "graphql" },
-    { "name": "Clean Architecture", "proficiency": 90, "icon": "architecture" },
-    { "name": "State Management", "proficiency": 90, "icon": "state" },
-    { "name": "ARCore", "proficiency": 75, "icon": "ar" }
+    {
+      "name": "Team Leadership",
+      "proficiency": 95,
+      "icon": "Teamwork"
+    },
+    {
+      "name": "Fast Learner",
+      "proficiency": 90,
+      "icon": "Learning"
+    },
+    {
+      "name": "Adaptive",
+      "proficiency": 95,
+      "icon": "Adaptability"
+    },
+    {
+      "name": "Visual Analysis",
+      "proficiency": 85,
+      "icon": "Analysis"
+    }
   ]
 }

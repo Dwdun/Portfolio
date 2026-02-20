@@ -1,0 +1,15 @@
+
+> build
+> nuxt build
+
+[90m???[39m  [36mBuilding Nuxt for production...[39m
+[90m???[39m
+[34m???[39m  [32mNuxt [1m4.3.1[22m[39m[90m (with [39m[90mNitro [1m2.13.1[22m[39m[90m, Vite [1m7.3.1[22m[39m[90m and Vue [1m3.5.28[22m[39m[90m)[39m
+[90m[[90mnuxt:tailwindcss[90m][39m [36m???[39m Using default Tailwind CSS file
+[90m???[39m
+[34m???[39m  Nitro preset: [36mcloudflare-pages[39m
+[36m???[39m Building client...
+[36m???[39m [36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+[36m???[39m transforming...
+error TS5083: Cannot read file 'C:/Users/Faqih/tsconfig.json'.
+error TS5083: Cannot read file 'C:/Users/Faqih sh/OneDrive/Dokumen/Portfolio/Portfolio/sh/OneDrive/Dokumen/Portfolio/Portfolio/tsconfig.json'.
