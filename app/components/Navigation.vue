@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-6 md:py-8 bg-transparent">
+  <nav class="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-6 md:py-8 bg-transparent hover:bg-[#FFFF00] transition-colors duration-300">
     <div class="grid grid-cols-2 md:grid-cols-3 items-start gap-4 uppercase tracking-[0.2em] text-xs sm:text-sm font-sans text-black">
       
       <!-- Left: Logo & Info -->

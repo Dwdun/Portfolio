@@ -1,0 +1,11 @@
+Model Information:
+* title:	Handphone 3d model
+* source:	https://sketchfab.com/3d-models/handphone-3d-model-074ff3a685f9419fa526b275244b6873
+* author:	Coc0-Design (https://sketchfab.com/Coc0-Design)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Handphone 3d model" (https://sketchfab.com/3d-models/handphone-3d-model-074ff3a685f9419fa526b275244b6873) by Coc0-Design (https://sketchfab.com/Coc0-Design) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
