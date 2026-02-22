@@ -14,10 +14,10 @@
           <div class="a3d hover:scale-105 transition-transform duration-700" style="--n: 6">
             <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/Cyrene.jpg" style="--i: 0" alt="Cyrene illustration"/>
             <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/HCW_Poster.png" style="--i: 1" alt="HCW Poster"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/jacq update 2.png" style="--i: 2" alt="Jacq character artwork"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/kakavasha final.png" style="--i: 3" alt="Kakavasha character art"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/phainon final.png" style="--i: 4" alt="Phainon character art"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/sparxie final.png" style="--i: 5" alt="Sparxie character art"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/jacq_update_2.png" style="--i: 2" alt="Jacq character artwork"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/kakavasha_final.png" style="--i: 3" alt="Kakavasha character art"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/phainon_final.png" style="--i: 4" alt="Phainon character art"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/sparxie_final.png" style="--i: 5" alt="Sparxie character art"/>
           </div>
         </div>
 
