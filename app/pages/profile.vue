@@ -1,79 +1,102 @@
 <template>
-  <div class="min-h-screen bg-bg-primary">
-    <div v-if="profile && education && languages && experience" class="section-container">
-      <!-- Header -->
-      <div class="text-center mb-16">
-        <h1 class="heading-1 gradient-text mb-4">About Me</h1>
-        <p class="text-xl text-text-secondary max-w-3xl mx-auto">{{ profile.bio }}</p>
+  <div class="min-h-screen bg-transparent pt-32 pb-24 px-6 md:px-12 max-w-[1400px] mx-auto">
+    <div v-if="profile && education && languages && experience">
+      
+      <!-- Brutalist Header & Bio -->
+      <div class="mb-24 flex flex-col md:flex-row md:items-start justify-between border-b border-black pb-16">
+        <div class="md:w-1/3 mb-8 md:mb-0">
+          <h1 class="font-serif text-[3rem] md:text-[5rem] leading-none text-black">Profile</h1>
+          <p class="font-sans text-sm text-black/60 uppercase tracking-widest mt-4">About Me</p>
+        </div>
+        <div class="md:w-2/3 md:pl-16">
+          <p class="font-serif text-2xl md:text-3xl text-black leading-relaxed">
+            {{ profile.bio }}
+          </p>
+        </div>
       </div>
 
-      <!-- Education -->
-      <section class="mb-16">
-        <h2 class="heading-2 mb-8">Education</h2>
-        <div class="space-y-6">
-          <div v-for="edu in education" :key="edu.institution" class="glass-card card-lift">
-            <h3 class="text-2xl font-bold text-text-primary mb-2">{{ edu.degree }}</h3>
-            <p class="text-primary font-semibold mb-2">{{ edu.institution }}</p>
-            <p class="text-text-secondary">{{ edu.period }} • {{ edu.location }}</p>
-          </div>
-        </div>
-      </section>
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8">
+        
+        <!-- Left Column: Education & Languages -->
+        <div class="lg:col-span-4 space-y-16">
+          
+          <!-- Education -->
+          <section>
+            <h2 class="font-sans text-xs uppercase tracking-widest text-black/50 mb-8 border-b border-black/20 pb-4">Education</h2>
+            <div class="space-y-8 mt-8">
+              <div v-for="edu in education" :key="edu.institution" class="group">
+                <h3 class="font-serif text-xl sm:text-2xl text-black mb-1 group-hover:text-blue-600 transition-colors">{{ edu.degree }}</h3>
+                <p class="font-sans text-black/80">{{ edu.institution }}</p>
+                <div class="flex items-center space-x-2 font-sans text-xs text-black/50 mt-2">
+                  <span>{{ edu.period }}</span>
+                  <span>—</span>
+                  <span>{{ edu.location }}</span>
+                </div>
+              </div>
+            </div>
+          </section>
 
-      <!-- Languages -->
-      <section class="mb-16">
-        <h2 class="heading-2 mb-8">Language Proficiency</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div v-for="lang in languages" :key="lang.language" class="glass-card">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <h3 class="text-xl font-bold text-text-primary">{{ lang.language }}</h3>
-                <p class="text-primary">{{ lang.level }}</p>
-              </div>
-              <div class="text-right">
-                <div class="text-2xl font-bold gradient-text">{{ lang.percentage.toFixed(1) }}%</div>
-                <p class="text-sm text-text-secondary">{{ lang.certification }}</p>
+          <!-- Languages -->
+          <section>
+            <h2 class="font-sans text-xs uppercase tracking-widest text-black/50 mb-8 border-b border-black/20 pb-4">Language Proficiency</h2>
+            <div class="space-y-8 mt-8">
+              <div v-for="lang in languages" :key="lang.language" class="group">
+                <div class="flex justify-between items-baseline mb-1">
+                  <h3 class="font-serif text-xl sm:text-2xl text-black group-hover:text-blue-600 transition-colors">{{ lang.language }}</h3>
+                  <span class="font-serif text-xl text-black/40">{{ lang.percentage.toFixed(1) }}%</span>
+                </div>
+                <p class="font-sans text-black/80">{{ lang.level }}</p>
+                <div class="flex items-center space-x-2 font-sans text-xs text-black/50 mt-2">
+                  <span>{{ lang.certification }}</span>
+                  <span v-if="lang.score">Score: {{ lang.score }}/{{ lang.maxScore }}</span>
+                </div>
               </div>
             </div>
-            <div class="w-full bg-bg-secondary rounded-full h-3 overflow-hidden">
-              <div 
-                class="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000"
-                :style="{ width: `${lang.percentage}%` }"
-              />
-            </div>
-            <p class="text-sm text-text-secondary mt-2">Score: {{ lang.score }}/{{ lang.maxScore }}</p>
-          </div>
-        </div>
-      </section>
+          </section>
 
-      <!-- Experience -->
-      <section>
-        <h2 class="heading-2 mb-8">Professional Experience</h2>
-        <div class="space-y-6">
-          <div v-for="exp in experience" :key="exp.title" class="glass-card">
-            <div class="flex justify-between items-start mb-4">
-              <div>
-                <h3 class="text-2xl font-bold text-text-primary">{{ exp.title }}</h3>
-                <p class="text-primary font-semibold">{{ exp.company }}</p>
+        </div>
+
+        <!-- Right Column: Professional Experience -->
+        <div class="lg:col-span-8 lg:pl-12 lg:border-l border-black/20">
+          <h2 class="font-sans text-xs uppercase tracking-widest text-black/50 mb-8 border-b border-black/20 pb-4">Professional Experience</h2>
+          
+          <div class="flex flex-col">
+            <div v-for="exp in experience" :key="exp.title" class="group border-b border-black/10 py-8 last:border-0 hover:bg-black/[0.02] transition-colors -mx-6 px-6 sm:mx-0 sm:px-0 sm:hover:bg-transparent">
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-start mb-6">
+                <!-- Meta -->
+                <div class="md:col-span-3 font-sans text-xs uppercase tracking-widest text-black/50 flex flex-col space-y-1 pt-1">
+                  <span class="text-blue-600">{{ exp.period }}</span>
+                  <span>{{ exp.location }}</span>
+                </div>
+                <!-- Title & Company -->
+                <div class="md:col-span-9">
+                  <h3 class="font-serif text-2xl md:text-3xl text-black mb-2 group-hover:text-blue-600 transition-colors">{{ exp.title }}</h3>
+                  <p class="font-sans text-black/80 font-medium">{{ exp.company }}</p>
+                </div>
               </div>
-              <div class="text-right">
-                <p class="text-text-secondary">{{ exp.period }}</p>
-                <p class="text-text-muted text-sm">{{ exp.location }}</p>
+
+              <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-start">
+                <div class="md:col-span-3"></div>
+                <div class="md:col-span-9">
+                  <ul class="space-y-3 font-sans text-black/80 text-sm mb-6">
+                    <li v-for="(resp, idx) in exp.responsibilities" :key="idx" class="flex items-start">
+                      <span class="text-blue-600 mr-3 font-serif italic text-lg leading-none">/</span>
+                      <span class="pt-1 leading-relaxed">{{ resp }}</span>
+                    </li>
+                  </ul>
+                  
+                  <div class="flex flex-wrap gap-2">
+                    <span v-for="tech in exp.techStack" :key="tech" class="font-sans text-[0.65rem] uppercase tracking-widest border border-black/20 text-black/60 px-2 py-1">
+                      {{ tech }}
+                    </span>
+                  </div>
+                </div>
               </div>
-            </div>
-            <ul class="space-y-2 mb-4">
-              <li v-for="(resp, idx) in exp.responsibilities" :key="idx" class="text-text-secondary flex items-start">
-                <UIIcon name="chevron-right" size="sm" class="text-primary mr-2 mt-1 flex-shrink-0" />
-                <span>{{ resp }}</span>
-              </li>
-            </ul>
-            <div class="flex flex-wrap gap-2">
-              <span v-for="tech in exp.techStack" :key="tech" class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-                {{ tech }}
-              </span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+      
     </div>
   </div>
 </template>

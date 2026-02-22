@@ -11,19 +11,13 @@
 
         <!-- 3D Carousel Scene (Central Visual) -->
         <div class="scene w-full h-[300px] md:h-[500px] flex justify-center items-center mb-16 md:mb-32 perspective-[1000px]">
-          <div class="a3d hover:scale-105 transition-transform duration-700" style="--n: 12">
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1540968221243-29f5d70540bf?w=400" style="--i: 0" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1596135187959-562c650d98bc?w=400" style="--i: 1" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1628944682084-831f35256163?w=400" style="--i: 2" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1590013330451-3946e83e0392?w=400" style="--i: 3" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1590421959604-741d0eec0a2e?w=400" style="--i: 4" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1572613000712-eadc57acbecd?w=400" style="--i: 5" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1570097192570-4b49a6736f9f?w=400" style="--i: 6" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1620789550663-2b10e0080354?w=400" style="--i: 7" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1617775623669-20bff4ffaa5c?w=400" style="--i: 8" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1548600916-dc8492f8e845?w=400" style="--i: 9" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1573824969595-a76d4365a2e6?w=400" style="--i: 10" alt="project preview"/>
-            <img class="card-3d shadow-2xl border border-black/10" src="https://images.unsplash.com/photo-1633936929709-59991b5fdd72?w=400" style="--i: 11" alt="project preview"/>
+          <div class="a3d hover:scale-105 transition-transform duration-700" style="--n: 6">
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/Cyrene.jpg" style="--i: 0" alt="Cyrene illustration"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/HCW_Poster.png" style="--i: 1" alt="HCW Poster"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/jacq%20update%202.png" style="--i: 2" alt="Jacq character artwork"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/kakavasha%20final.png" style="--i: 3" alt="Kakavasha character art"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/phainon%20final.png" style="--i: 4" alt="Phainon character art"/>
+            <img class="card-3d shadow-2xl border border-black/10" src="/assets/gambar/sparxie%20final.png" style="--i: 5" alt="Sparxie character art"/>
           </div>
         </div>
 
