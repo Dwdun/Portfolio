@@ -50,5 +50,21 @@
     "category": "Graphic Design",
     "image": "/assets/avatar.png",
     "nda": false
+  },
+  {
+    "id": 4,
+    "title": "Slain The Slime - Mini Game Team Project",
+    "description": "Game MVP Assets created for a side-scroller RPG. Established distinct visual classes for the players and a scalable hierarchy for the enemies. Role: Character Designer and Lead Designer.",
+    "techStack": [
+      "Aseprite"
+    ],
+    "features": [
+      "Character Design",
+      "Game Assets",
+      "Pixel Art"
+    ],
+    "category": "Game Design",
+    "image": "https://cdnb.artstation.com/p/assets/images/images/095/551/595/original/muhammx-faqih-shiam-boss-slime.gif",
+    "nda": false
   }
 ]
