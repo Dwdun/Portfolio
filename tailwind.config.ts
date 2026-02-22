@@ -13,21 +13,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#10b981',        // Emerald green
-        secondary: '#059669',      // Deep emerald
-        accent: '#6ee7b7',         // Light emerald
-        'bg-primary': '#0a0a0a',   // True black
-        'bg-secondary': '#171717', // Neutral 900
-        'bg-tertiary': '#262626',  // Neutral 800
-        'text-primary': '#f5f5f5', // Neutral 100
-        'text-secondary': '#a3a3a3', // Neutral 400
+        primary: '#0a3cff',        // Main blue
+        secondary: '#002bcc',      // Deep blue
+        accent: '#82afff',         // Light blue
+        'bg-primary': '#ffffff',   // True white
+        'bg-secondary': '#f5f5f5', // Neutral 100
+        'bg-tertiary': '#e5e5e5',  // Neutral 200
+        'text-primary': '#0a0a0a', // True black
+        'text-secondary': '#404040', // Neutral 700
         'text-muted': '#737373',   // Neutral 500
-        border: '#404040',         // Neutral 700
-        success: '#22c55e',        // Green 500
+        border: '#d4d4d4',         // Neutral 300
+        success: '#3b82f6',        // Blue 500
         warning: '#f59e0b',        // Amber 500
         error: '#ef4444',          // Red 500
       },
       fontFamily: {
+        serif: ['"Playfair Display"', 'serif'],
         sans: ['Inter', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
@@ -54,8 +55,8 @@ export default {
           '50%': { transform: 'translateY(-20px)' },
         },
         glow: {
-          from: { boxShadow: '0 0 20px rgba(16, 185, 129, 0.5)' },
-          to: { boxShadow: '0 0 40px rgba(16, 185, 129, 0.8), 0 0 60px rgba(16, 185, 129, 0.4)' },
+          from: { boxShadow: '0 0 20px rgba(10, 60, 255, 0.5)' },
+          to: { boxShadow: '0 0 40px rgba(10, 60, 255, 0.8), 0 0 60px rgba(10, 60, 255, 0.4)' },
         },
         shimmer: {
           '0%': { backgroundPosition: '-200% 0' },
@@ -79,10 +80,10 @@ export default {
         },
       },
       boxShadow: {
-        'glow': '0 0 20px rgba(16, 185, 129, 0.5)',
-        'glow-lg': '0 0 40px rgba(16, 185, 129, 0.6)',
-        'glow-cyan': '0 0 20px rgba(5, 150, 105, 0.5)',
-        'glow-pink': '0 0 20px rgba(110, 231, 183, 0.5)',
+        'glow': '0 0 20px rgba(10, 60, 255, 0.5)',
+        'glow-lg': '0 0 40px rgba(10, 60, 255, 0.6)',
+        'glow-cyan': '0 0 20px rgba(0, 43, 204, 0.5)',
+        'glow-pink': '0 0 20px rgba(130, 175, 255, 0.5)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

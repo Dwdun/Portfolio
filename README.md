@@ -1,4 +1,4 @@
-# Kemal Ardian - Portfolio Website
+# Muhammad Faqih Shiam - Portfolio Website
 
 > **State-of-the-art personal portfolio** showcasing full-stack expertise with 3D animations, interactive elements, and modern design.
 
@@ -493,4 +493,4 @@ This portfolio is a personal project. Feel free to use as a template but please 
 ---
 
 
-Made with ❤️ by Kemal Ardian
+Made with ❤️ by Muhammad Faqih Shiam

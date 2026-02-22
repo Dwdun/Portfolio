@@ -1,119 +1,134 @@
 <template>
-  <div class="min-h-screen bg-bg-primary">
-    <div v-if="assignment" class="section-container">
-      <!-- Back Button -->
-      <NuxtLink to="/assignments" class="inline-flex items-center text-primary hover:text-secondary transition-colors mb-8">
-        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-        </svg>
-        Back to Assignments
+  <div class="min-h-screen bg-transparent pt-32 pb-24 px-6 md:px-12 max-w-[1400px] mx-auto">
+    
+    <div v-if="assignment">
+      <!-- Minimalist Back Button -->
+      <NuxtLink to="/assignments" class="inline-block font-sans text-sm uppercase tracking-widest text-black hover:opacity-50 transition-opacity border-b border-black pb-1 mb-16">
+        ← Back to assignments
       </NuxtLink>
 
-      <!-- Header -->
-      <div class="glass-card mb-8">
-        <div class="flex justify-between items-start mb-4">
-          <span class="px-4 py-2 bg-gradient-to-r from-primary to-secondary rounded-full text-white font-bold">
-            Assignment {{ assignment.id }}
-          </span>
-          <span class="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm">
-            {{ assignment.type.toUpperCase() }}
-          </span>
+      <!-- Brutalist Header -->
+      <div class="mb-16 md:mb-24">
+        <!-- Meta Row -->
+        <div class="flex items-center space-x-4 font-sans text-xs uppercase tracking-widest text-black/50 mb-6">
+          <span class="text-blue-600 font-medium">No. {{ String(assignment.id).padStart(2, '0') }}</span>
+          <span>—</span>
+          <span>{{ assignment.type }}</span>
         </div>
-        <h1 class="heading-2 mb-4">{{ assignment.title }}</h1>
-        <p class="text-text-secondary text-lg">{{ assignment.description }}</p>
-      </div>
-
-      <!-- Objectives -->
-      <div class="glass-card mb-8">
-        <h2 class="text-2xl font-bold text-text-primary mb-4">Objectives</h2>
-        <ul class="space-y-2">
-          <li v-for="(obj, idx) in assignment.objectives" :key="idx" class="text-text-secondary flex items-start">
-            <UIIcon name="check-circle" size="sm" class="text-primary mr-2 mt-0.5 flex-shrink-0" />
-            <span>{{ obj }}</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Results -->
-      <div class="glass-card mb-8">
-        <h2 class="text-2xl font-bold text-text-primary mb-4">Results</h2>
-        <ul class="space-y-2">
-          <li v-for="(result, idx) in assignment.results" :key="idx" class="text-text-secondary flex items-start">
-            <UIIcon name="sparkles" size="sm" class="text-secondary mr-2 mt-0.5 flex-shrink-0" />
-            <span>{{ result }}</span>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Technologies (for website) -->
-      <div v-if="assignment.technologies" class="glass-card mb-8">
-        <h2 class="text-2xl font-bold text-text-primary mb-4">Technologies Used</h2>
-        <div class="flex flex-wrap gap-3">
-          <span v-for="tech in assignment.technologies" :key="tech" class="px-4 py-2 bg-gradient-to-r from-primary/20 to-secondary/20 text-primary rounded-lg font-semibold">
-            {{ tech }}
-          </span>
-        </div>
-      </div>
-
-      <!-- Links (for website) -->
-      <div v-if="assignment.liveUrl || assignment.githubUrl" class="glass-card mb-8">
-        <h2 class="text-2xl font-bold text-text-primary mb-4">Links</h2>
-        <div class="flex flex-wrap gap-4">
-          <a v-if="assignment.liveUrl" :href="assignment.liveUrl" target="_blank" class="btn-glow inline-flex items-center gap-2">
-            <UIIcon name="globe-alt" size="sm" class="flex-shrink-0" />
-            Live Demo
-          </a>
-          <a v-if="assignment.githubUrl" :href="assignment.githubUrl" target="_blank" class="btn-outline-glow inline-flex items-center gap-2">
-            <UIIcon name="code-bracket-square" size="sm" class="flex-shrink-0" />
-            GitHub Repository
-          </a>
-        </div>
-      </div>
-
-      <!-- File Download (for PDF/Image/Video) -->
-      <div v-if="assignment.file" class="glass-card">
-        <h2 class="text-2xl font-bold text-text-primary mb-4">View/Download</h2>
         
-        <!-- PDF -->
-        <div v-if="assignment.type === 'pdf'" class="space-y-4">
-          <p class="text-text-secondary">Download the TOR document below:</p>
-          <a :href="assignment.file" download class="btn-glow inline-flex items-center gap-2">
-            <UIIcon name="document-arrow-down" size="sm" class="flex-shrink-0" />
-            Download PDF
-          </a>
+        <h1 class="font-serif text-[3rem] md:text-[5rem] lg:text-[6rem] leading-[1.1] tracking-tight text-black mb-6 max-w-5xl">
+          {{ assignment.title }}
+        </h1>
+        
+        <p class="font-sans text-lg md:text-xl text-black/80 max-w-3xl leading-relaxed">
+          {{ assignment.description }}
+        </p>
+      </div>
+
+      <!-- Detail Grid Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8 border-t border-black pt-16">
+        
+        <!-- Left Col: Details & Meta -->
+        <div class="lg:col-span-4 space-y-16">
+          
+          <!-- Technologies -->
+          <div v-if="assignment.technologies">
+            <h2 class="font-sans text-xs uppercase tracking-widest text-black/50 mb-6">Technologies</h2>
+            <div class="flex flex-wrap gap-2">
+              <span v-for="tech in assignment.technologies" :key="tech" class="font-mono text-sm border border-black/20 text-black px-3 py-1 cursor-default">
+                {{ tech }}
+              </span>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div v-if="assignment.liveUrl || assignment.githubUrl">
+            <h2 class="font-sans text-xs uppercase tracking-widest text-black/50 mb-6">Links / Access</h2>
+            <div class="flex flex-col space-y-4">
+              <a v-if="assignment.liveUrl" :href="assignment.liveUrl" target="_blank" class="w-fit font-sans text-lg text-black hover:text-blue-600 border-b border-black/20 pb-1 transition-colors">
+                Live Demo ↗
+              </a>
+              <a v-if="assignment.githubUrl" :href="assignment.githubUrl" target="_blank" class="w-fit font-sans text-lg text-black hover:text-blue-600 border-b border-black/20 pb-1 transition-colors">
+                Source Code ↗
+              </a>
+            </div>
+          </div>
+          
         </div>
 
-        <!-- Image -->
-        <div v-if="assignment.type === 'image'" class="space-y-4">
-          <img :src="assignment.file" :alt="assignment.title" class="w-full rounded-lg shadow-glow-lg" />
-          <a :href="assignment.file" download class="btn-outline-glow inline-flex items-center gap-2">
-            <UIIcon name="photo" size="sm" class="flex-shrink-0" />
-            Download Image
-          </a>
-        </div>
+        <!-- Right Col: Objectives, Results & Files -->
+        <div class="lg:col-span-8 space-y-16 lg:pl-12 lg:border-l border-black/20">
+          
+          <!-- Objectives -->
+          <div v-if="assignment.objectives?.length">
+            <h2 class="font-serif text-3xl mb-8 text-black">Objectives</h2>
+            <ul class="space-y-4 font-sans text-black/80">
+              <li v-for="(obj, idx) in assignment.objectives" :key="idx" class="flex items-start">
+                <span class="text-blue-600 mr-4 font-serif italic text-xl">/</span>
+                <span class="pt-1">{{ obj }}</span>
+              </li>
+            </ul>
+          </div>
 
-        <!-- Video -->
-        <div v-if="assignment.type === 'video'" class="space-y-4">
-          <video controls class="w-full rounded-lg shadow-glow-lg">
-            <source :src="assignment.file" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <a :href="assignment.file" download class="btn-outline-glow inline-flex items-center gap-2">
-            <UIIcon name="film" size="sm" class="flex-shrink-0" />
-            Download Video
-          </a>
+          <!-- Results -->
+          <div v-if="assignment.results?.length">
+            <h2 class="font-serif text-3xl mb-8 text-black">Results</h2>
+            <ul class="space-y-4 font-sans text-black/80">
+              <li v-for="(result, idx) in assignment.results" :key="idx" class="flex items-start">
+                <span class="text-blue-600 mr-4 font-serif italic text-xl">/</span>
+                <span class="pt-1">{{ result }}</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- File / Media Block -->
+          <div v-if="assignment.file" class="pt-8 border-t border-black/10">
+            <h2 class="font-serif text-3xl mb-8 text-black">Attached Media</h2>
+            
+            <div v-if="assignment.type === 'pdf'" class="border border-black/20 p-8 text-center hover:bg-black/[0.02] transition-colors">
+              <p class="font-sans text-black/60 mb-6">A PDF document is associated with this assignment.</p>
+              <a :href="assignment.file" download class="inline-block bg-black text-white font-sans uppercase tracking-widest text-xs px-8 py-4 hover:bg-blue-600 transition-colors">
+                Download Document ↓
+              </a>
+            </div>
+
+            <div v-if="assignment.type === 'image'" class="space-y-6">
+              <div class="border border-black/10 bg-black/[0.02] p-4">
+                <img :src="assignment.file" :alt="assignment.title" class="w-full h-auto mix-blend-multiply" />
+              </div>
+              <a :href="assignment.file" download class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:text-blue-600 hover:border-blue-600 transition-colors pb-1">
+                Download Image ↓
+              </a>
+            </div>
+
+            <div v-if="assignment.type === 'video'" class="space-y-6">
+              <div class="border border-black/10 bg-black/[0.02] p-4">
+                <video controls class="w-full">
+                  <source :src="assignment.file" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <a :href="assignment.file" download class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:text-blue-600 hover:border-blue-600 transition-colors pb-1">
+                Download Video ↓
+              </a>
+            </div>
+            
+          </div>
+
         </div>
       </div>
+      
     </div>
 
-    <!-- Not Found -->
-    <div v-else class="section-container text-center">
-      <h1 class="heading-1 gradient-text mb-4">Assignment Not Found</h1>
-      <p class="text-text-secondary mb-8">The assignment you're looking for doesn't exist.</p>
-      <NuxtLink to="/assignments" class="btn-glow">
-        Back to Assignments
+    <!-- 404 State -->
+    <div v-else class="flex flex-col items-center justify-center pt-32 text-center">
+      <h1 class="font-serif text-[4rem] md:text-[6rem] leading-none text-black mb-8 italic">404 Error</h1>
+      <p class="font-sans text-lg text-black/60 mb-12">The requested assignment does not exist or has been removed.</p>
+      <NuxtLink to="/assignments" class="inline-block bg-black text-white font-sans uppercase tracking-widest text-xs px-8 py-4 hover:bg-blue-600 transition-colors">
+        ← Back to assignments
       </NuxtLink>
     </div>
+
   </div>
 </template>
 
@@ -127,7 +142,7 @@ const assignment = computed(() => {
 })
 
 useHead({
-  title: () => assignment.value ? `${assignment.value.title} | Kemal Ardian` : 'Assignment Not Found',
+  title: () => assignment.value ? `${assignment.value.title} | Muhammad Faqih Shiam` : 'Assignment Not Found',
   meta: [
     { name: 'description', content: () => assignment.value?.description || 'Assignment details' }
   ]

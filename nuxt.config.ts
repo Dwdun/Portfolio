@@ -25,7 +25,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Kemal Ardian | Full-Stack Software Engineer",
+      title: "Muhammad Faqih Shiam | Full-Stack Software Engineer",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
@@ -39,7 +39,7 @@ export default defineNuxtConfig({
         { property: "og:type", content: "website" },
         {
           property: "og:title",
-          content: "Kemal Ardian | Full-Stack Software Engineer",
+          content: "Muhammad Faqih Shiam | Full-Stack Software Engineer",
         },
         {
           property: "og:description",
@@ -59,7 +59,7 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           href:
-            "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap",
+            "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
         },
       ],
     },

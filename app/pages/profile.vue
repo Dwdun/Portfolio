@@ -82,7 +82,7 @@
 const { profile, education, languages, experience } = useConfig()
 
 useHead({
-  title: 'Profile | Kemal Ardian',
-  meta: [{ name: 'description', content: 'Professional profile and background' }]
+  title: 'Profile | Muhammad Faqih Shiam',
+  meta: [{ name: 'description', content: 'My professional journey and background' }]
 })
 </script>
