@@ -1,5 +1,6 @@
 # Muhammad Faqih Shiam - Portfolio Website
-[website](#https://github.com/Dwdun/Portfolio)
+[link website](#https://github.com/Dwdun/Portfolio)
+
 > **State-of-the-art personal portfolio** showcasing full-stack expertise with 3D animations, interactive elements, and modern design.
 
 ## 🚀 Quick Start
