@@ -87,9 +87,9 @@
           </div>
           
           <div class="mt-16">
-            <NuxtLink to="/contact" class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:opacity-50 transition-opacity">
+            <a href="/docs/CV.pdf" download="CV_Kreatif_Muhammad_Faqih_Shiam.pdf" class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:opacity-50 transition-opacity">
               Download my CV →
-            </NuxtLink>
+            </a>
           </div>
         </div>
 

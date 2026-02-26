@@ -79,6 +79,7 @@ export interface Project {
   category: string;
   image: string;
   nda: boolean;
+  link?: string;
 }
 
 export interface Organization {

@@ -66,5 +66,23 @@
     "category": "Game Design",
     "image": "https://cdnb.artstation.com/p/assets/images/images/095/551/595/original/muhammx-faqih-shiam-boss-slime.gif",
     "nda": false
+  },
+  {
+    "id": 5,
+    "title": "Stream Wars: Ad-venture",
+    "description": "A satirical 2D clicker/arcade game where you protect an anime fan's screen from a mischievous hacker named SUPA. Developed in Godot, aimed at surviving pop-ups and literal spoilers.",
+    "techStack": [
+      "Godot",
+      "Aseprite"
+    ],
+    "features": [
+      "Art Direction",
+      "Character Design",
+      "Game Assets"
+    ],
+    "category": "Game Design",
+    "image": "https://img.itch.zone/aW1hZ2UvMzM1MTQ1OS8yMDA4OTk5OS5wbmc=/original/G3uQpT.png",
+    "nda": false,
+    "link": "https://dwdun.itch.io/stream-wars-ad-venture"
   }
 ]

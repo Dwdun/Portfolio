@@ -14,7 +14,7 @@
         <section class="border-t border-black pt-8">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div class="md:col-span-3">
-              <h2 class="font-sans text-xs uppercase tracking-widest text-black/50">01. Languages</h2>
+              <h2 class="font-sans text-xs uppercase tracking-widest text-black/50">01. Software</h2>
             </div>
             <div class="md:col-span-9 flex flex-wrap gap-4">
               <span 
@@ -32,7 +32,7 @@
         <section class="border-t border-black pt-8">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div class="md:col-span-3">
-              <h2 class="font-sans text-xs uppercase tracking-widest text-black/50">02. Frameworks & Outils</h2>
+              <h2 class="font-sans text-xs uppercase tracking-widest text-black/50">02. Hard Skills</h2>
             </div>
             <div class="md:col-span-9 flex flex-wrap gap-4">
               <span 
@@ -50,7 +50,7 @@
         <section class="border-t border-black pt-8">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div class="md:col-span-3">
-              <h2 class="font-sans text-xs uppercase tracking-widest text-black/50">03. Concepts & Pratiques</h2>
+              <h2 class="font-sans text-xs uppercase tracking-widest text-black/50">03. Soft Skills</h2>
             </div>
             <div class="md:col-span-9 flex flex-wrap gap-4">
               <span 

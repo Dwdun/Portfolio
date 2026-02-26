@@ -31,7 +31,7 @@
     "id": 2,
     "title": "TOR Kegiatan LKMM-TH",
     "type": "pdf",
-    "file": "/assets/assignments/assignment-2-tor.pdf",
+    "file": "/assets/TOR/TOR_MuhammadFaqihShiam.pdf",
     "description": "Comprehensive Terms of Reference document for redesigning the LKMM-TH event with innovative concept and budget optimization",
     "objectives": [
       "Design innovative LKMM-TH concept to replace ineffective two-day format",
@@ -51,7 +51,7 @@
     "id": 3,
     "title": "Infografis Teknologi & Karier",
     "type": "image",
-    "file": "/assets/assignments/assignment-3-infographic.png",
+    "file": "/assets/Infografis/Assignment_Infografis.png",
     "description": "A3-sized infographic exploring career opportunities in technology sector with statistical data and visual storytelling",
     "objectives": [
       "Create informative and engaging A3 infographic on Career theme",
@@ -64,6 +64,9 @@
       "Data-driven insights from credible sources (LinkedIn, BPS, etc.)",
       "Engaging visual hierarchy and color scheme",
       "Clear information delivery with balanced text and graphics"
+    ],
+    "technologies": [
+      "Canva"
     ],
     "theme": "Karier",
     "thumbnail": "/assets/assignments/assignment-3.png"

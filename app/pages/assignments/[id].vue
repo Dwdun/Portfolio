@@ -85,9 +85,15 @@
           <div v-if="assignment.file" class="pt-8 border-t border-black/10">
             <h2 class="font-serif text-3xl mb-8 text-black">Attached Media</h2>
             
-            <div v-if="assignment.type === 'pdf'" class="border border-black/20 p-8 text-center hover:bg-black/[0.02] transition-colors">
-              <p class="font-sans text-black/60 mb-6">A PDF document is associated with this assignment.</p>
-              <a :href="assignment.file" download class="inline-block bg-black text-white font-sans uppercase tracking-widest text-xs px-8 py-4 hover:bg-blue-600 transition-colors">
+            <div v-if="assignment.type === 'pdf'" class="space-y-8 flex flex-col items-center border border-black/20 p-8 hover:bg-black/[0.02] transition-colors">
+              <p class="font-sans text-black/60">A PDF document is associated with this assignment.</p>
+              
+              <!-- PDF Preview Feature -->
+              <div class="w-full h-[500px] md:h-[700px] border border-black/10 overflow-hidden shadow-sm bg-white">
+                 <embed :src="assignment.file" type="application/pdf" class="w-full h-full" toolbar="0" view="FitH" />
+              </div>
+
+              <a :href="assignment.file" download target="_blank" rel="noopener noreferrer" class="inline-block bg-black text-white font-sans uppercase tracking-widest text-xs px-8 py-4 hover:bg-blue-600 transition-colors">
                 Download Document ↓
               </a>
             </div>
@@ -96,7 +102,7 @@
               <div class="border border-black/10 bg-black/[0.02] p-4">
                 <img :src="assignment.file" :alt="assignment.title" class="w-full h-auto mix-blend-multiply" />
               </div>
-              <a :href="assignment.file" download class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:text-blue-600 hover:border-blue-600 transition-colors pb-1">
+              <a :href="assignment.file" download target="_blank" rel="noopener noreferrer" class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:text-blue-600 hover:border-blue-600 transition-colors pb-1">
                 Download Image ↓
               </a>
             </div>
@@ -108,7 +114,7 @@
                   Your browser does not support the video tag.
                 </video>
               </div>
-              <a :href="assignment.file" download class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:text-blue-600 hover:border-blue-600 transition-colors pb-1">
+              <a :href="assignment.file" download target="_blank" rel="noopener noreferrer" class="inline-block font-sans text-sm tracking-wider text-black border-b border-black hover:text-blue-600 hover:border-blue-600 transition-colors pb-1">
                 Download Video ↓
               </a>
             </div>

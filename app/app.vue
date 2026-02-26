@@ -1,5 +1,6 @@
 <template>
   <div>
+    <CustomCursor />
     <Navigation />
     <NuxtPage />
   </div>

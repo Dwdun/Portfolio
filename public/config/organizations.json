@@ -1,5 +1,18 @@
 [
   {
+    "title": "Leader of Study Club",
+    "organization": "MAN 1 Cianjur",
+    "period": "2023 – 2024",
+    "location": "Cianjur, Indonesia",
+    "current": false,
+    "responsibilities": [
+      "An organization focused on academics and achievements, built to improve the school's index.",
+      "Trained, guided, and facilitated athletes for various competitions (OSN, KSM, etc.).",
+      "Biggest achievement in 2024: successfully sent Chemistry OSN and Math KSM athletes to the National Level."
+    ],
+    "logo": ""
+  },
+  {
     "title": "Graphic Designer",
     "organization": "SIM X ADIWIDYA ITB",
     "period": "Oct 2025 – Nov 2025",

@@ -63,10 +63,7 @@
 </template>
 
 <script setup lang="ts">
-import { useScrollAnimations } from '~/composables/useScrollAnimations'
-
 const { achievements } = useConfig()
-useScrollAnimations()
 
 useHead({
   title: 'Achievements | Muhammad Faqih Shiam',

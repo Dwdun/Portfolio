@@ -48,7 +48,7 @@ export default defineNuxtConfig({
         { property: "og:image", content: "/assets/avatar.png" },
       ],
       link: [
-        { rel: "icon", type: "image/png", href: "/assets/avatar.png" },
+        { rel: "icon", type: "image/jpeg", href: "/assets/gambar/logo.jpeg" },
         // Google Fonts
         { rel: "preconnect", href: "https://fonts.googleapis.com" },
         {

@@ -1,5 +1,5 @@
 <template>
-  <nav class="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-6 md:py-8 bg-transparent hover:bg-[#FFFF00] transition-colors duration-300">
+  <nav class="fixed top-0 left-0 right-0 z-50 w-full px-6 md:px-12 py-6 md:py-8 bg-gray-200/50 backdrop-blur-md hover:bg-gray-300/60 transition-colors duration-300">
     <div class="grid grid-cols-2 md:grid-cols-3 items-start gap-4 uppercase tracking-[0.2em] text-xs sm:text-sm font-sans text-black">
       
       <!-- Left: Logo & Info -->
@@ -21,7 +21,7 @@
       <!-- Right: Links / Journal -->
       <div class="flex flex-col items-end space-y-1 relative">
         <button @click="mobileMenuOpen = !mobileMenuOpen" class="hover:opacity-70 transition-opacity font-semibold flex items-center gap-2">
-          JOURNAL <span class="text-[0.6rem] transition-transform duration-300" :class="mobileMenuOpen ? 'rotate-180' : ''">▼</span>
+          {{ currentRouteName }} <span class="text-[0.6rem] transition-transform duration-300" :class="mobileMenuOpen ? 'rotate-180' : ''">▼</span>
         </button>
         
         <!-- Dropdown Menu -->
@@ -99,5 +99,19 @@ onUnmounted(() => {
 const route = useRoute()
 watch(() => route.path, () => {
   mobileMenuOpen.value = false
+})
+
+const currentRouteName = computed(() => {
+  const currentLink = navLinks.find(link => link.path === route.path)
+  if (currentLink) return currentLink.name.toUpperCase()
+  
+  // Handle nested routes like /portfolio/4
+  const baseRoute = route.path.split('/')[1]
+  if (baseRoute) {
+    const parentLink = navLinks.find(link => link.path === `/${baseRoute}`)
+    if (parentLink) return parentLink.name.toUpperCase()
+  }
+  
+  return 'HOME'
 })
 </script>

@@ -18,10 +18,11 @@
 
       <!-- Brutalist List View -->
       <div class="flex flex-col border-t border-black">
-        <div 
+        <NuxtLink 
           v-for="(project, index) in projects" 
           :key="project.id" 
-          class="group border-b border-black py-8 md:py-12 transition-colors hover:bg-black/[0.02]"
+          :to="`/portfolio/${project.id}`"
+          class="block group border-b border-black py-8 md:py-12 transition-colors hover:bg-black/[0.02]"
         >
           <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
             
@@ -64,8 +65,41 @@
               </div>
             </div>
 
+            <!-- Previews for Slain The Slime -->
+            <div v-if="project.id === 4" class="col-span-12 mt-8">
+              <div class="block group/gallery border-t border-black/10 pt-8">
+                <div class="flex items-center justify-between mb-6">
+                  <h4 class="font-sans text-xs uppercase tracking-widest text-black/50">Asset Previews</h4>
+                  <span class="font-sans text-xs uppercase tracking-widest text-blue-600 opacity-0 group-hover/gallery:opacity-100 transition-opacity">View Full Details →</span>
+                </div>
+                <!-- Mini Gallery -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden">
+                    <img src="/assets/slain the slime/boss slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-125" alt="Boss Slime" loading="lazy" />
+                  </div>
+                  <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden">
+                    <img src="/assets/slain the slime/slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-150" alt="Slime" loading="lazy" />
+                  </div>
+                  <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden hidden md:flex">
+                    <img src="/assets/slain the slime/vfx_boss slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-125" alt="VFX" loading="lazy" />
+                  </div>
+                  <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden hidden md:flex relative">
+                     <img src="/assets/slain the slime/slime_sheet.png" class="absolute h-full w-auto max-w-none object-cover opacity-50 filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500" style="object-position: left center;" alt="Sprite Sheet" loading="lazy" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Generic CTA / Arrow for Projects -->
+            <div v-if="project.id !== 4" class="col-span-12 mt-8 border-t border-black/10 pt-6 flex justify-between md:justify-end opacity-0 group-hover:opacity-100 transition-opacity">
+              <span class="font-sans text-xs uppercase tracking-widest text-black/30 md:hidden">Project Info</span>
+              <span class="font-sans text-xs uppercase tracking-widest text-black/50 inline-flex items-center gap-2 text-blue-600">
+                View Full Details <span class="group-hover:translate-x-1 transition-transform">→</span>
+              </span>
+            </div>
+
           </div>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </div>
