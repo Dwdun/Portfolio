@@ -63,7 +63,7 @@
                 <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <!-- Checkerboard background for transparency -->
                 <div class="w-full aspect-square max-w-[300px] flex items-center justify-center" style="background-image: linear-gradient(45deg, #ccc 25%, transparent 25%), linear-gradient(-45deg, #ccc 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ccc 75%), linear-gradient(-45deg, transparent 75%, #ccc 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px;">
-                  <img src="/assets/slain the slime/boss slime.gif" alt="Boss Slime Animation" class="w-full h-auto max-h-full object-contain drop-shadow-2xl scale-125 md:scale-150" />
+                  <img src="/assets/slain-the-slime/boss-slime.gif" alt="Boss Slime Animation" class="w-full h-auto max-h-full object-contain drop-shadow-2xl scale-125 md:scale-150" />
                 </div>
                 <div class="w-full border-t border-black/10 pt-4 mt-8 flex justify-between items-center z-10">
                   <span class="font-sans text-xs uppercase tracking-widest font-bold">Boss Slime</span>
@@ -75,7 +75,7 @@
               <div class="bg-[#f8f9fa] border border-black/10 p-12 flex flex-col justify-center items-center group relative overflow-hidden">
                 <div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 <div class="w-full aspect-square max-w-[300px] flex items-center justify-center" style="background-image: linear-gradient(45deg, #ccc 25%, transparent 25%), linear-gradient(-45deg, #ccc 25%, transparent 25%), linear-gradient(45deg, transparent 75%, #ccc 75%), linear-gradient(-45deg, transparent 75%, #ccc 75%); background-size: 20px 20px; background-position: 0 0, 0 10px, 10px -10px, -10px 0px;">
-                  <img src="/assets/slain the slime/slime.gif" alt="Normal Slime Animation" class="w-full h-auto max-h-full object-contain drop-shadow-2xl scale-150 md:scale-[2]" />
+                  <img src="/assets/slain-the-slime/slime.gif" alt="Normal Slime Animation" class="w-full h-auto max-h-full object-contain drop-shadow-2xl scale-150 md:scale-[2]" />
                 </div>
                 <div class="w-full border-t border-black/10 pt-4 mt-8 flex justify-between items-center z-10">
                   <span class="font-sans text-xs uppercase tracking-widest font-bold">Base Slime</span>
@@ -98,14 +98,14 @@
             
             <div class="md:col-span-9">
               <div class="bg-black border border-black p-12 flex flex-col justify-center items-center group relative w-full overflow-hidden min-h-[400px]">
-                <img src="/assets/slain%20the%20slime/vfx_boss%20slime.gif" alt="Boss Slime VFX" class="w-full max-w-[500px] h-auto object-contain scale-110" />
+                <img src="/assets/slain-the-slime/vfx_boss-slime.gif" alt="Boss Slime VFX" class="w-full max-w-[500px] h-auto object-contain scale-110" />
                 <div class="absolute bottom-6 left-6 right-6 border-t border-white/20 pt-4 flex justify-between items-center text-white">
                   <span class="font-sans text-xs uppercase tracking-widest font-bold">Boss Impact VFX</span>
                   <span class="font-sans text-[0.65rem] text-white/50 uppercase">Animated</span>
                 </div>
               </div>
               <div class="mt-4 flex justify-end">
-                <a href="/assets/slain%20the%20slime/vfx_boss%20slime.png" target="_blank" class="font-sans text-xs uppercase tracking-widest text-black/50 hover:text-blue-600 transition-colors">
+                <a href="/assets/slain-the-slime/vfx_boss-slime.png" target="_blank" class="font-sans text-xs uppercase tracking-widest text-black/50 hover:text-blue-600 transition-colors">
                   View Source Image →
                 </a>
               </div>
@@ -131,7 +131,7 @@
                 </div>
                 <!-- Scrollable container for long sprite sheet -->
                 <div class="w-full overflow-x-auto bg-[#f8f9fa] border border-black/10 flex items-center p-8 custom-scrollbar">
-                  <img src="/assets/slain%20the%20slime/boss%20slime_sheet.png" alt="Boss Slime Sprite Sheet" class="h-32 object-contain image-rendering-pixelated" />
+                  <img src="/assets/slain-the-slime/boss-slime_sheet.png" alt="Boss Slime Sprite Sheet" class="h-32 object-contain image-rendering-pixelated" />
                 </div>
               </div>
 
@@ -141,7 +141,7 @@
                 </div>
                 <!-- Scrollable container for long sprite sheet -->
                 <div class="w-full overflow-x-auto bg-[#f8f9fa] border border-black/10 flex items-center p-8 custom-scrollbar">
-                  <img src="/assets/slain%20the%20slime/slime_sheet.png" alt="Base Slime Sprite Sheet" class="h-24 object-contain image-rendering-pixelated" />
+                  <img src="/assets/slain-the-slime/slime_sheet.png" alt="Base Slime Sprite Sheet" class="h-24 object-contain image-rendering-pixelated" />
                 </div>
               </div>
 

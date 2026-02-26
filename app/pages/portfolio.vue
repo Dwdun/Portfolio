@@ -75,16 +75,16 @@
                 <!-- Mini Gallery -->
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                   <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden">
-                    <img src="/assets/slain%20the%20slime/boss%20slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-125" alt="Boss Slime" loading="lazy" />
+                    <img src="/assets/slain-the-slime/boss-slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-125" alt="Boss Slime" loading="lazy" />
                   </div>
                   <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden">
-                    <img src="/assets/slain%20the%20slime/slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-150" alt="Slime" loading="lazy" />
+                    <img src="/assets/slain-the-slime/slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-150" alt="Slime" loading="lazy" />
                   </div>
                   <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden hidden md:flex">
-                    <img src="/assets/slain%20the%20slime/vfx_boss%20slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-125" alt="VFX" loading="lazy" />
+                    <img src="/assets/slain-the-slime/vfx_boss-slime.gif" class="w-full h-full object-contain filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500 scale-125" alt="VFX" loading="lazy" />
                   </div>
                   <div class="aspect-square bg-black/5 p-4 flex items-center justify-center border border-black/10 overflow-hidden hidden md:flex relative">
-                     <img src="/assets/slain%20the%20slime/slime_sheet.png" class="absolute h-full w-auto max-w-none object-cover opacity-50 filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500" style="object-position: left center;" alt="Sprite Sheet" loading="lazy" />
+                     <img src="/assets/slain-the-slime/slime_sheet.png" class="absolute h-full w-auto max-w-none object-cover opacity-50 filter grayscale group-hover/gallery:grayscale-0 transition-all duration-500" style="object-position: left center;" alt="Sprite Sheet" loading="lazy" />
                   </div>
                 </div>
               </div>

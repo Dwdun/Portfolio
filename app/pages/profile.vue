@@ -144,14 +144,14 @@ const { profile, education, languages, experience } = useConfig()
 const selectedCertificate = ref<{name: string, path: string} | null>(null)
 
 const certificates = [
-  { name: 'Certificate 1', path: '/assets/Sertifikat%20kompetensi/Cuplikan%20layar%202026-02-26%20053614.png' },
-  { name: 'Certificate 2', path: '/assets/Sertifikat%20kompetensi/Cuplikan%20layar%202026-02-26%20053835.png' },
-  { name: 'Certificate 3', path: '/assets/Sertifikat%20kompetensi/Cuplikan%20layar%202026-02-26%20053854.png' },
-  { name: 'Certificate 4', path: '/assets/Sertifikat%20kompetensi/Cuplikan%20layar%202026-02-26%20053912.png' },
-  { name: 'Certificate 5', path: '/assets/Sertifikat%20kompetensi/Cuplikan%20layar%202026-02-26%20053934.png' },
-  { name: 'Certificate 6', path: '/assets/Sertifikat%20kompetensi/Cuplikan%20layar%202026-02-26%20054132.png' },
-  { name: 'Certificate 7', path: '/assets/Sertifikat%20kompetensi/Cuplikan%20layar%202026-02-26%20054143.png' },
-  { name: 'Certificate 8', path: '/assets/Sertifikat%20kompetensi/IMG-20250213-WA0041.jpg' }
+  { name: 'Certificate 1', path: '/assets/sertifikat-kompetensi/cuplikan-layar-2026-02-26-053614.png' },
+  { name: 'Certificate 2', path: '/assets/sertifikat-kompetensi/cuplikan-layar-2026-02-26-053835.png' },
+  { name: 'Certificate 3', path: '/assets/sertifikat-kompetensi/cuplikan-layar-2026-02-26-053854.png' },
+  { name: 'Certificate 4', path: '/assets/sertifikat-kompetensi/cuplikan-layar-2026-02-26-053912.png' },
+  { name: 'Certificate 5', path: '/assets/sertifikat-kompetensi/cuplikan-layar-2026-02-26-053934.png' },
+  { name: 'Certificate 6', path: '/assets/sertifikat-kompetensi/cuplikan-layar-2026-02-26-054132.png' },
+  { name: 'Certificate 7', path: '/assets/sertifikat-kompetensi/cuplikan-layar-2026-02-26-054143.png' },
+  { name: 'Certificate 8', path: '/assets/sertifikat-kompetensi/img-20250213-wa0041.jpg' }
 ]
 
 useHead({
