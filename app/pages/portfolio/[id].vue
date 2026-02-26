@@ -151,58 +151,7 @@
 
       </div>
       
-      <!-- Stream Wars Specific Gallery -->
-      <div v-else-if="project.id === 5" class="space-y-24">
-        
-        <section class="border-t border-black/10 pt-16">
-          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start mb-12">
-            <div class="md:col-span-4">
-              <h2 class="font-serif text-3xl md:text-4xl text-black">Asset Previews</h2>
-              <p class="font-sans text-sm text-black/60 mt-4 leading-relaxed">
-                Featured animations and satirical pop-up assets created for the game's core mechanic.
-              </p>
-            </div>
-            
-            <div class="md:col-span-8 space-y-16">
-              
-              <!-- First row of assets -->
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="group">
-                  <div class="bg-black/5 border border-black/10 p-8 flex items-center justify-center min-h-[300px]">
-                    <img src="/assets/stream%20wars/i%20con.gif" alt="Icon Popup Animation" class="max-w-[80%] h-auto object-contain drop-shadow-xl saturate-150" />
-                  </div>
-                  <div class="mt-4 flex justify-between">
-                    <span class="font-sans text-xs uppercase tracking-widest font-bold">Pop-up Element</span>
-                  </div>
-                </div>
-
-                <div class="group">
-                  <div class="bg-black/5 border border-black/10 p-8 flex items-center justify-center min-h-[300px]">
-                    <img src="/assets/stream%20wars/aot.gif" alt="AOT Pop-up Animation" class="max-w-[80%] h-auto object-contain drop-shadow-xl saturate-150" />
-                  </div>
-                  <div class="mt-4 flex justify-between">
-                    <span class="font-sans text-xs uppercase tracking-widest font-bold">Pop-up Element</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Main antagonist asset -->
-              <div class="group w-full">
-                <div class="bg-black/5 border border-black/10 p-8 flex items-center justify-center min-h-[400px]">
-                  <img src="/assets/stream%20wars/supa%20collosal.gif" alt="Supa Colossal Animation" class="w-full h-auto max-h-[500px] object-contain drop-shadow-2xl saturate-150 transform hover:scale-105 transition-transform duration-500" />
-                </div>
-                <div class="mt-4 flex justify-between">
-                  <span class="font-sans text-xs uppercase tracking-widest font-bold text-black border-b border-black pb-1">Supa Colossal — The Main Hacker Antagonist</span>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-      </div>
-      
-      <!-- Generic Project Showcase (for non-Slain the Slime and non-Stream Wars) -->
+      <!-- Generic Project Showcase (for non-Slain the Slime) -->
       <div v-else class="space-y-24">
         
         <section v-if="project.image" class="border-t border-black/10 pt-16">
