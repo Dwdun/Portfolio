@@ -98,14 +98,14 @@
             
             <div class="md:col-span-9">
               <div class="bg-black border border-black p-12 flex flex-col justify-center items-center group relative w-full overflow-hidden min-h-[400px]">
-                <img src="/assets/slain the slime/vfx_boss slime.gif" alt="Boss Slime VFX" class="w-full max-w-[500px] h-auto object-contain scale-110" />
+                <img src="/assets/slain%20the%20slime/vfx_boss%20slime.gif" alt="Boss Slime VFX" class="w-full max-w-[500px] h-auto object-contain scale-110" />
                 <div class="absolute bottom-6 left-6 right-6 border-t border-white/20 pt-4 flex justify-between items-center text-white">
                   <span class="font-sans text-xs uppercase tracking-widest font-bold">Boss Impact VFX</span>
                   <span class="font-sans text-[0.65rem] text-white/50 uppercase">Animated</span>
                 </div>
               </div>
               <div class="mt-4 flex justify-end">
-                <a href="/assets/slain the slime/vfx_boss slime.png" target="_blank" class="font-sans text-xs uppercase tracking-widest text-black/50 hover:text-blue-600 transition-colors">
+                <a href="/assets/slain%20the%20slime/vfx_boss%20slime.png" target="_blank" class="font-sans text-xs uppercase tracking-widest text-black/50 hover:text-blue-600 transition-colors">
                   View Source Image →
                 </a>
               </div>
@@ -131,7 +131,7 @@
                 </div>
                 <!-- Scrollable container for long sprite sheet -->
                 <div class="w-full overflow-x-auto bg-[#f8f9fa] border border-black/10 flex items-center p-8 custom-scrollbar">
-                  <img src="/assets/slain the slime/boss slime_sheet.png" alt="Boss Slime Sprite Sheet" class="h-32 object-contain image-rendering-pixelated" />
+                  <img src="/assets/slain%20the%20slime/boss%20slime_sheet.png" alt="Boss Slime Sprite Sheet" class="h-32 object-contain image-rendering-pixelated" />
                 </div>
               </div>
 
@@ -141,7 +141,7 @@
                 </div>
                 <!-- Scrollable container for long sprite sheet -->
                 <div class="w-full overflow-x-auto bg-[#f8f9fa] border border-black/10 flex items-center p-8 custom-scrollbar">
-                  <img src="/assets/slain the slime/slime_sheet.png" alt="Base Slime Sprite Sheet" class="h-24 object-contain image-rendering-pixelated" />
+                  <img src="/assets/slain%20the%20slime/slime_sheet.png" alt="Base Slime Sprite Sheet" class="h-24 object-contain image-rendering-pixelated" />
                 </div>
               </div>
 
